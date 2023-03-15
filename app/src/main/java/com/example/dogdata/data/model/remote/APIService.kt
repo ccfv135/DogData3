@@ -1,13 +1,16 @@
 package com.example.dogdata
 
+import com.example.dogdata.data.model.DogsResponse
+import okhttp3.MultipartBody
+import retrofit2.Call
 import retrofit2.Response
-import retrofit2.http.GET
-import retrofit2.http.Url
+import retrofit2.http.*
 
 interface APIService {
     @GET
     suspend fun getDogsByBreeds(@Url url:String): Response<DogsResponse>
-     @GET("/example/example2/{id}/loquesea")
+
+    @GET("/example/example2/{id}/loquesea")
     fun getCharacterByName2(@Path("id") id: String): Call<DogsResponse>
 
 
@@ -29,3 +32,4 @@ interface APIService {
     ): Call<*>
 }
 data class ExampleArisDto(val name: String, val age: Int)
+

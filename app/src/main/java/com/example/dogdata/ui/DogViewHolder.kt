@@ -1,4 +1,4 @@
-package com.example.dogdata
+package com.example.dogdata.ui
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

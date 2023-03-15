@@ -1,8 +1,10 @@
-package com.example.dogdata
+package com.example.dogdata.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dogdata.ui.DogViewHolder
+import com.example.dogdata.R
 
 class DogAdapter(private val images: List<String>) : RecyclerView.Adapter<DogViewHolder>() {
 
